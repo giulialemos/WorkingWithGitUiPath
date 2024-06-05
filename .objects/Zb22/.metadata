@@ -1,0 +1,12 @@
+﻿{
+  "Name": "Chrome Knooly - Login",
+  "Type": "App",
+  "Id": "Zb22PqhxfE60WKPm0zXSrg",
+  "Reference": "qWqD3TLuWEmxriGAsu9f3A/Zb22PqhxfE60WKPm0zXSrg",
+  "Created": "2024-06-05T13:28:31.0238684Z",
+  "Updated": "2024-06-05T13:28:31.0238684Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=24.4.1.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.4.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

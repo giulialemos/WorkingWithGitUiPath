@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="PbqfJgILsEOJKefh8zx5QA" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="https://knooly-qa.keeggo.com/login" CVScreenId="475834ac-5509-4d21-80ee-372de1ebbdf8" CvElementArea="2077, 449, 364, 51" CvType="InputBox" DesignTimeRectangle="2094, 463, 330, 24" DesignTimeScaleFactor="1" ElementType="InputBox" FullSelectorArgument="&lt;webctrl id='txt-email' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='txt-email' tag='INPUT' type='email' class='mat-mdc-input-element ng-tns-c5-0 mat-mdc-form-field-input-control mdc-text-field__input cdk-text-field-autofill-monitored ng-dirty ng-touched ng-valid' placeholder='Digite seu e-mail de cadastro' aaname='E-mail' /&gt;" Guid="b19caae1-db17-420b-bc9e-d1a7ae6c4515" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Knooly - Login' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="1">
+          <Target CVScreenId="475834ac-5509-4d21-80ee-372de1ebbdf8" CvElementArea="2077, 449, 364, 51" CvType="InputBox" DesignTimeRectangle="2093, 443, 52, 16" ElementType="Text" FullSelectorArgument="&lt;webctrl id='mat-mdc-form-field-label-0' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl id='mat-mdc-form-field-label-0' tag='LABEL' type='' class='mdc-floating-label mat-mdc-floating-label ng-tns-c5-0 mdc-floating-label--float-above ng-star-inserted' aaname='' check:innerText='E-mail' /&gt;" Guid="cae71bef-e2fb-4667-93bc-6d168ff7acd1" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="7a92be6394ddf923466ef5e960a80056.png" xmlns="">0Glr8qMVZFECM7cBQ6lAfvg</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">TypeInto</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

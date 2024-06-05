@@ -1,0 +1,13 @@
+﻿{
+  "Name": "1.0.0",
+  "Type": "AppVersion",
+  "Id": "VLC_SSpj3kmyOdRLJ2SZ-w",
+  "Reference": "qWqD3TLuWEmxriGAsu9f3A/VLC_SSpj3kmyOdRLJ2SZ-w",
+  "ParentRef": "qWqD3TLuWEmxriGAsu9f3A/Zb22PqhxfE60WKPm0zXSrg",
+  "Created": "2024-06-05T13:28:31.0582773Z",
+  "Updated": "2024-06-05T13:28:31.0582773Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=24.4.1.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.4.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

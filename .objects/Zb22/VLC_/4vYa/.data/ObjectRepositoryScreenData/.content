@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryScreenData ContentHash="rgEIwLsivkm8lSAlIon-sw" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryScreenData.Data>
+    <TargetApp x:Key="TargetApp" Area="0, 0, 0, 0" BrowserType="Chrome" IconBase64="iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAALEgAACxIB0t1+/AAAAb9JREFUWEftVMFtwzAM9Ah5trANZISM0BH8KRDKn47QDdoN7A3aDTKCR8izaBwjI2SElidLqkQpToJ+dQABybqjKZJikZGRkSFxKNVmqtTbsaLhWKqTNl5PNXVfD9u1oV3EWG2fwJ116gc2lmrP+49F/X7VrKa67azoorEjcI3M4V96La44ypQgYVOtTr6Te/XISBAEokoQz7PTdsBanLHRYOQF7/v4PNDLMw6i7bQYdYkJ1Ms0jZV6lzzrRPsoydVc6rFO6rlf4tvz3ugijCW9Blw2fMOZDQI/0uQEmC8yRX0xVW1Qu2udzpwo3d+P1OAMWpk5H6f1C3rFlRO9BIfOEZrDcBeRqOv5WuAW8sJBADqiG4CbhDWftbcEIYNHDwSOllKIHxzK541d++mERc9LABrJ58lHn/5Hboyd4Ucwg8al+1hTE2rh1DyvBJINj6cQfNRGOz+duJU/5fx0p54XHPt6c/Od5DnOpWGhyyNKZM0+P4D3qUG0qNdP0CLVVMv2NwUB87zuGMUU9wqcxP2QMi9yAT5PZyKweMoGQF0QSHAjnUbq9ei8grnexIFwWV0JaECv+H2RkZGRMaMofgHAYdWTbEV4qwAAAABJRU5ErkJggg==" Selector="&lt;html app='chrome.exe' title='Knooly - Login' /&gt;" Title="Knooly - Login" Url="https://knooly-qa.keeggo.com/login">
+      <imageRef attrName="InformativeScreenshot" originalValue="9e128a76c6ab75f179f83d0dfa608f07.jpg" xmlns="">0V3BZV3lw0E2FEai3pvkC3w</imageRef>
+    </TargetApp>
+  </ObjectRepositoryScreenData.Data>
+</ObjectRepositoryScreenData>

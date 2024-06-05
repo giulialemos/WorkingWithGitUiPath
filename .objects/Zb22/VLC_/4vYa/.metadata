@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Chrome Knooly - Login",
+  "Type": "Screen",
+  "Id": "4vYaQ1gV_E69TUIqI-juMw",
+  "Reference": "qWqD3TLuWEmxriGAsu9f3A/4vYaQ1gV_E69TUIqI-juMw",
+  "ParentRef": "qWqD3TLuWEmxriGAsu9f3A/VLC_SSpj3kmyOdRLJ2SZ-w",
+  "Created": "2024-06-05T13:28:31.0648644Z",
+  "Updated": "2024-06-05T13:28:31.0648644Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=24.4.1.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.4.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

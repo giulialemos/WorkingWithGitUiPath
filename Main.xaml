@@ -1,0 +1,476 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="599,5585" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Platform.SyncObjects</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Models</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="512,5520" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Chrome Knooly - Login" sap:VirtualizedContainerService.HintSize="450,1668" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" InteractionMode="DebuggerApi" ScopeGuid="013df06f-cd74-4245-8098-7969daaa479c" Version="V2">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Fazer" sap:VirtualizedContainerService.HintSize="416,1419" sap2010:WorkflowViewState.IdRef="Sequence_3">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NTypeInto ActivateBefore="True" sap2010:Annotation.AnnotationText="" ClickBeforeMode="Single" DisplayName="Type Into 'E-mail'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="354,317" sap2010:WorkflowViewState.IdRef="NTypeInto_3" ScopeIdentifier="013df06f-cd74-4245-8098-7969daaa479c" Text="giulia.lemos@keeggo.com" Version="V3">
+              <uix:NTypeInto.Target>
+                <uix:TargetAnchorable BrowserURL="https://knooly-qa.keeggo.com/login" CVScreenId="475834ac-5509-4d21-80ee-372de1ebbdf8" ContentHash="PbqfJgILsEOJKefh8zx5QA" CvElementArea="2077, 449, 364, 51" CvType="InputBox" DesignTimeRectangle="2094, 463, 330, 24" DesignTimeScaleFactor="1" ElementType="InputBox" FullSelectorArgument="&lt;webctrl id='txt-email' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='txt-email' tag='INPUT' type='email' class='mat-mdc-input-element ng-tns-c5-0 mat-mdc-form-field-input-control mdc-text-field__input cdk-text-field-autofill-monitored ng-dirty ng-touched ng-valid' placeholder='Digite seu e-mail de cadastro' aaname='E-mail' /&gt;" Guid="b19caae1-db17-420b-bc9e-d1a7ae6c4515" InformativeScreenshot="7a92be6394ddf923466ef5e960a80056.png" IsResponsive="True" Reference="qWqD3TLuWEmxriGAsu9f3A/V5IPnLzu0UWf0-IJVnrnOw" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Knooly - Login' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target CVScreenId="475834ac-5509-4d21-80ee-372de1ebbdf8" CvElementArea="2077, 449, 364, 51" CvType="InputBox" DesignTimeRectangle="2093, 443, 52, 16" ElementType="Text" FullSelectorArgument="&lt;webctrl id='mat-mdc-form-field-label-0' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl id='mat-mdc-form-field-label-0' tag='LABEL' type='' class='mdc-floating-label mat-mdc-floating-label ng-tns-c5-0 mdc-floating-label--float-above ng-star-inserted' aaname='' check:innerText='E-mail' /&gt;" Guid="cae71bef-e2fb-4667-93bc-6d168ff7acd1" SearchSteps="FuzzySelector, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NTypeInto.Target>
+              <uix:NTypeInto.VerifyOptions>
+                <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionTypeIntoOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionTypeIntoOptions.Retry>
+                  <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                </uix:VerifyExecutionTypeIntoOptions>
+              </uix:NTypeInto.VerifyOptions>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </uix:NTypeInto>
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Senha'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="354,286" sap2010:WorkflowViewState.IdRef="NTypeInto_4" ScopeIdentifier="013df06f-cd74-4245-8098-7969daaa479c" Text="Giulia123" Version="V3">
+              <uix:NTypeInto.Target>
+                <uix:TargetAnchorable BrowserURL="https://knooly-qa.keeggo.com/login" CVScreenId="475834ac-5509-4d21-80ee-372de1ebbdf8" CvElementArea="2075, 520, 366, 52" CvType="InputBox" DesignTimeRectangle="2094, 534, 291, 24" DesignTimeScaleFactor="1" ElementType="InputBoxPassword" FullSelectorArgument="&lt;webctrl id='txt-password' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='txt-password' tag='INPUT' type='password' class='mat-mdc-input-element ng-tns-c5-1 mat-mdc-form-field-input-control mdc-text-field__input cdk-text-field-autofill-monitored ng-dirty ng-touched ng-valid' placeholder='Digite sua senha' aaname='Senha' /&gt;" Guid="bf15da67-458d-4536-abcf-8388230f7da2" InformativeScreenshot="8348c2c22be9be2c8599ef8a5b227a5c.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Knooly - Login' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target CVScreenId="475834ac-5509-4d21-80ee-372de1ebbdf8" CvElementArea="2075, 520, 366, 52" CvType="InputBox" DesignTimeRectangle="2093, 514, 51, 16" ElementType="Text" FullSelectorArgument="&lt;webctrl id='mat-mdc-form-field-label-2' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl id='mat-mdc-form-field-label-2' tag='LABEL' type='' class='mdc-floating-label mat-mdc-floating-label ng-tns-c5-1 mdc-floating-label--float-above ng-star-inserted' aaname='' check:innerText='Senha' /&gt;" Guid="f3a1ee8e-4fcd-4f06-947b-e11df89dd958" SearchSteps="FuzzySelector, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NTypeInto.Target>
+              <uix:NTypeInto.VerifyOptions>
+                <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionTypeIntoOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionTypeIntoOptions.Retry>
+                  <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                </uix:VerifyExecutionTypeIntoOptions>
+              </uix:NTypeInto.VerifyOptions>
+            </uix:NTypeInto>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Fazer login'" sap:VirtualizedContainerService.HintSize="354,225" sap2010:WorkflowViewState.IdRef="NClick_2" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="013df06f-cd74-4245-8098-7969daaa479c" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://knooly-qa.keeggo.com/login" CVScreenId="475834ac-5509-4d21-80ee-372de1ebbdf8" CvElementArea="2076, 641, 104, 45" CvTextArea="2093, 655, 71, 17" CvTextArgument="Fazer login" CvType="Button" DesignTimeRectangle="2078, 643, 101, 41" DesignTimeScaleFactor="1" ElementType="Button" FullSelectorArgument="&lt;webctrl parentid='id-src-app-security-login-button' tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='id-src-app-security-login-button' tag='BUTTON' type='button' class='mat-ripple default MEDIUM' aaname=' Fazer login ' check:innerText='Fazer login' /&gt;" Guid="83c6175d-4fd1-4295-bb6c-3905a8d8e5e9" InformativeScreenshot="47db9b60b9a4071afdbd6c70ae665609.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Knooly - Login' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target CVScreenId="475834ac-5509-4d21-80ee-372de1ebbdf8" CvElementArea="2076, 641, 104, 45" CvTextArea="2093, 655, 71, 17" CvTextArgument="Fazer login" CvType="Button" DesignTimeRectangle="2094, 653, 69, 21" ElementType="Text" FullSelectorArgument="&lt;webctrl parentid='id-src-app-security-login-button' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='id-src-app-security-login-button' tag='SPAN' type='' class='' aaname=' Fazer login ' check:innerText='Fazer login' /&gt;" Guid="7187a851-f7ef-4fb1-b395-86e2f5cbdaae" SearchSteps="FuzzySelector, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NClick.Target>
+              <uix:NClick.VerifyOptions>
+                <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionOptions.Retry>
+                  <uix:VerifyExecutionOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionOptions.Timeout>
+                </uix:VerifyExecutionOptions>
+              </uix:NClick.VerifyOptions>
+            </uix:NClick>
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'token'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="354,286" sap2010:WorkflowViewState.IdRef="NTypeInto_5" ScopeIdentifier="013df06f-cd74-4245-8098-7969daaa479c" Text="123456" Version="V3">
+              <uix:NTypeInto.Target>
+                <uix:TargetAnchorable BrowserURL="https://knooly-qa.keeggo.com/verification-code" CVScreenId="f7af06d5-7eb4-4421-85f4-6a6030476355" CvElementArea="2075, 540, 275, 54" CvType="InputBox" DesignTimeRectangle="2113, 552, 224, 30" DesignTimeScaleFactor="1" ElementType="InputBox" FullSelectorArgument="&lt;webctrl id='id-sec-verification-code-verification-input' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='id-sec-verification-code-verification-input' tag='INPUT' type='text' class='input-code letter-spacing input-upper ng-untouched ng-pristine ng-invalid' aaname='' /&gt;" Guid="8c5c4756-58b9-4cd8-b4f8-a84dddc6a8bf" InformativeScreenshot="3f774de66898a7033729dbb64668add1.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Knooly - Código de Verificação' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive" />
+              </uix:NTypeInto.Target>
+              <uix:NTypeInto.VerifyOptions>
+                <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionTypeIntoOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionTypeIntoOptions.Retry>
+                  <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                </uix:VerifyExecutionTypeIntoOptions>
+              </uix:NTypeInto.VerifyOptions>
+            </uix:NTypeInto>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Verificar código'" sap:VirtualizedContainerService.HintSize="354,218" sap2010:WorkflowViewState.IdRef="NClick_3" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="013df06f-cd74-4245-8098-7969daaa479c" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://knooly-qa.keeggo.com/verification-code" CVScreenId="f7af06d5-7eb4-4421-85f4-6a6030476355" CvElementArea="2077, 626, 133, 45" CvTextArea="2092, 640, 102, 17" CvTextArgument="Verificar codigo" CvType="Button" DesignTimeRectangle="2078, 628, 131, 41" DesignTimeScaleFactor="1" ElementType="Button" FullSelectorArgument="&lt;webctrl tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='BUTTON' type='submit' class='mat-ripple default MEDIUM' aaname=' Verificar código ' check:innerText='Verificar código' /&gt;" Guid="134605d2-3f21-4bbd-8397-a58d981cefcd" InformativeScreenshot="0f9bc1ca989293fea7f8b3492f518b36.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Knooly - Código de Verificação' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target CVScreenId="f7af06d5-7eb4-4421-85f4-6a6030476355" CvElementArea="2077, 626, 133, 45" CvTextArea="2092, 640, 102, 17" CvTextArgument="Verificar codigo" CvType="Button" DesignTimeRectangle="2094, 638, 99, 21" ElementType="Text" FullSelectorArgument="&lt;webctrl tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='SPAN' type='' class='' aaname=' Verificar código ' check:innerText='Verificar código' /&gt;" Guid="83e7b36e-bd00-4cb5-85ac-33f0d91d3f2b" SearchSteps="FuzzySelector, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NClick.Target>
+              <uix:NClick.VerifyOptions>
+                <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionOptions.Retry>
+                  <uix:VerifyExecutionOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionOptions.Timeout>
+                </uix:VerifyExecutionOptions>
+              </uix:NClick.VerifyOptions>
+            </uix:NClick>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="0, 0, 0, 0" BrowserType="Chrome" IconBase64="iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAALEgAACxIB0t1+/AAAAb9JREFUWEftVMFtwzAM9Ah5trANZISM0BH8KRDKn47QDdoN7A3aDTKCR8izaBwjI2SElidLqkQpToJ+dQABybqjKZJikZGRkSFxKNVmqtTbsaLhWKqTNl5PNXVfD9u1oV3EWG2fwJ116gc2lmrP+49F/X7VrKa67azoorEjcI3M4V96La44ypQgYVOtTr6Te/XISBAEokoQz7PTdsBanLHRYOQF7/v4PNDLMw6i7bQYdYkJ1Ms0jZV6lzzrRPsoydVc6rFO6rlf4tvz3ugijCW9Blw2fMOZDQI/0uQEmC8yRX0xVW1Qu2udzpwo3d+P1OAMWpk5H6f1C3rFlRO9BIfOEZrDcBeRqOv5WuAW8sJBADqiG4CbhDWftbcEIYNHDwSOllKIHxzK541d++mERc9LABrJ58lHn/5Hboyd4Ucwg8al+1hTE2rh1DyvBJINj6cQfNRGOz+duJU/5fx0p54XHPt6c/Od5DnOpWGhyyNKZM0+P4D3qUG0qNdP0CLVVMv2NwUB87zuGMUU9wqcxP2QMi9yAT5PZyKweMoGQF0QSHAjnUbq9ei8grnexIFwWV0JaECv+H2RkZGRMaMofgHAYdWTbEV4qwAAAABJRU5ErkJggg==" InformativeScreenshot="9e128a76c6ab75f179f83d0dfa608f07.jpg" Reference="qWqD3TLuWEmxriGAsu9f3A/4vYaQ1gV_E69TUIqI-juMw" Selector="&lt;html app='chrome.exe' title='Knooly - Login' /&gt;" Title="Knooly - Login" Url="https://knooly-qa.keeggo.com/login" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Chrome: Knooly - Dashboard" sap:VirtualizedContainerService.HintSize="450,1515" sap2010:WorkflowViewState.IdRef="NApplicationCard_3" InteractionMode="DebuggerApi" ScopeGuid="013df06f-cd74-4245-8098-7969daaa479c" Version="V2">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Fazer" sap:VirtualizedContainerService.HintSize="416,1266" sap2010:WorkflowViewState.IdRef="Sequence_4">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Negócios'" sap:VirtualizedContainerService.HintSize="354,225" sap2010:WorkflowViewState.IdRef="NClick_8" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="013df06f-cd74-4245-8098-7969daaa479c" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://knooly-qa.keeggo.com/main/dashboard" CVScreenId="d00f4397-c7f6-4b1b-b78a-c7076ecc4f74" CvElementArea="30, 287, 25, 24" CvType="Icon" DesignTimeRectangle="33, 289, 20, 20" DesignTimeScaleFactor="1" ElementType="Icon" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;app-root&amp;gt;app-main&amp;gt;section&amp;gt;aside&amp;gt;app-nav-menu&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;mat-tree&amp;gt;mat-tree-node&amp;gt;div&amp;gt;div&amp;gt;mat-icon' tag='MAT-ICON' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' tag='MAT-ICON' class='mat-icon notranslate ng-tns-c155-3 material-icons mat-ligature-font mat-icon-no-color ng-star-inserted' aaname=' work ' check:innerText='work' /&gt;" Guid="c4899d55-793c-4907-a18b-a5257ff2b093" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAB8SURBVEhL7ZTNCcAgDEa7itsJbiMukkF0DaFLpK3kkhqN0J9THnwHxeSph2z4MSZQ0QUV0DuHrotHqHRmgi4oqTVMhdYX0t6AvwU7QpC+YzEBzg4cLqCbPcn9VSboYgI1JlAzFwwn52r6CcsFRI5SsZKYqZojCt7EBAqIB5jQt6NKFiTKAAAAAElFTkSuQmCC" InformativeScreenshot="695c61be4f03d73b08e266dcfef1031b.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Knooly - Dashboard' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive" />
+              </uix:NClick.Target>
+              <uix:NClick.VerifyOptions>
+                <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionOptions.Retry>
+                  <uix:VerifyExecutionOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionOptions.Timeout>
+                </uix:VerifyExecutionOptions>
+              </uix:NClick.VerifyOptions>
+            </uix:NClick>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Adicionar novo negócio'" sap:VirtualizedContainerService.HintSize="354,225" sap2010:WorkflowViewState.IdRef="NClick_9" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="013df06f-cd74-4245-8098-7969daaa479c" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://knooly-qa.keeggo.com/business" CVScreenId="e5cf7d01-caf2-46e9-adf6-2cb4e4b7ee34" CvElementArea="2313, 298, 208, 45" CvType="Button" DesignTimeRectangle="2315, 300, 205, 41" DesignTimeScaleFactor="1" ElementType="Button" FullSelectorArgument="&lt;webctrl parentid='id-business-new-business-button' tag='BUTTON' type='button' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='id-business-new-business-button' tag='BUTTON' type='button' class='mat-ripple default MEDIUM' aaname='add Adicionar novo negócio ' check:innerText='add&amp;#xA;Adicionar novo negócio' /&gt;" Guid="45190504-f00c-4f67-b534-c54cb02ab1f1" InformativeScreenshot="b9e31b51232508a33074ad78037e6604.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Knooly - Negócios' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target CVScreenId="e5cf7d01-caf2-46e9-adf6-2cb4e4b7ee34" CvElementArea="2313, 298, 208, 45" CvTextArea="2353, 313, 152, 16" CvTextArgument="Adicionar novo negocio" CvType="Button" DesignTimeRectangle="2355, 310, 149, 21" ElementType="Text" FullSelectorArgument="&lt;webctrl parentid='id-business-new-business-button' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='id-business-new-business-button' tag='SPAN' type='' class='' aaname=' Adicionar novo negócio ' check:innerText='Adicionar novo negócio' /&gt;" Guid="2452a186-8d10-40fa-9993-37ec620dd71d" SearchSteps="FuzzySelector, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NClick.Target>
+              <uix:NClick.VerifyOptions>
+                <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionOptions.Retry>
+                  <uix:VerifyExecutionOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionOptions.Timeout>
+                </uix:VerifyExecutionOptions>
+              </uix:NClick.VerifyOptions>
+            </uix:NClick>
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Nome linha de negócio'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="354,286" sap2010:WorkflowViewState.IdRef="NTypeInto_7" ScopeIdentifier="013df06f-cd74-4245-8098-7969daaa479c" Text="0001 - teste giulia" Version="V3">
+              <uix:NTypeInto.Target>
+                <uix:TargetAnchorable BrowserURL="https://knooly-qa.keeggo.com/business/new" CVScreenId="86339dd9-00c4-4d91-9090-b1a5e6c45f83" CvElementArea="157, 597, 1336, 52" CvType="InputBox" DesignTimeRectangle="175, 612, 1303, 24" DesignTimeScaleFactor="1" ElementType="InputBox" FullSelectorArgument="&lt;webctrl id='id-line-step-input-business-name' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='id-line-step-input-business-name' tag='INPUT' type='text' class='mat-mdc-input-element ng-tns-c5-38 ng-untouched ng-pristine ng-invalid mat-mdc-form-field-input-control mdc-text-field__input cdk-text-field-autofill-monitored' placeholder='Nome da linha de negócio' aaname='' /&gt;" Guid="cf1270e3-9168-4d81-95bf-d05fc1f3ac3c" InformativeScreenshot="bf633c2ccc0702cdf507d35ab884f306.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Knooly - Adicionar Linha de Negócio' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive" />
+              </uix:NTypeInto.Target>
+              <uix:NTypeInto.VerifyOptions>
+                <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionTypeIntoOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionTypeIntoOptions.Retry>
+                  <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                </uix:VerifyExecutionTypeIntoOptions>
+              </uix:NTypeInto.VerifyOptions>
+            </uix:NTypeInto>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Adicionar Linha'" sap:VirtualizedContainerService.HintSize="354,225" sap2010:WorkflowViewState.IdRef="NClick_10" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="013df06f-cd74-4245-8098-7969daaa479c" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://knooly-qa.keeggo.com/business/new" CVScreenId="86339dd9-00c4-4d91-9090-b1a5e6c45f83" CvTextArea="1312, 689, 182, 16" CvTextArgument="Adicionar Linha de Negocio" CvType="Text" DesignTimeRectangle="1314, 686, 180, 20" DesignTimeScaleFactor="1" ElementType="Text" FullSelectorArgument="&lt;webctrl id='id-line-step-add-line-of-business-action' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl id='id-line-step-add-line-of-business-action' tag='SPAN' type='' class='add-item-tag ng-star-inserted' aaname='Adicionar Linha de Negócio ' check:innerText='Adicionar Linha de Negócio' /&gt;" Guid="3844b438-38e7-422f-a7c7-19d5a910508f" InformativeScreenshot="9f14980cfd8b1137dedf2e0cf70a5441.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Knooly - Adicionar Linha de Negócio' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive" />
+              </uix:NClick.Target>
+              <uix:NClick.VerifyOptions>
+                <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionOptions.Retry>
+                  <uix:VerifyExecutionOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionOptions.Timeout>
+                </uix:VerifyExecutionOptions>
+              </uix:NClick.VerifyOptions>
+            </uix:NClick>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'save Finalizar'" sap:VirtualizedContainerService.HintSize="354,218" sap2010:WorkflowViewState.IdRef="NClick_11" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="013df06f-cd74-4245-8098-7969daaa479c" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://knooly-qa.keeggo.com/business/new" CVScreenId="47652bf2-661d-4bdb-83fc-b5668b681cae" CvElementArea="2269, 448, 252, 45" CvType="Button" DesignTimeRectangle="2270, 450, 250, 41" DesignTimeScaleFactor="1" ElementType="Button" FullSelectorArgument="&lt;webctrl parentid='id-finish-and-save-button' tag='BUTTON' type='button' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='id-finish-and-save-button' tag='BUTTON' type='button' class='mat-ripple default MEDIUM' aaname=' save  Finalizar e salvar novo negócio ' check:innerText='save&amp;#xA;Finalizar e salvar novo negócio' /&gt;" Guid="5d0cb31e-617e-4220-bc32-988e842fb602" InformativeScreenshot="6f36c4817b4dc0518feaae5f815b61bb.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Knooly - Adicionar Linha de Negócio' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target CVScreenId="47652bf2-661d-4bdb-83fc-b5668b681cae" CvElementArea="2269, 448, 252, 45" CvType="Button" DesignTimeRectangle="2286, 462, 16, 16" ElementType="Text" FullSelectorArgument="&lt;webctrl parentid='id-finish-and-save-button' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='id-finish-and-save-button' tag='SPAN' type='' class='material-icons-outlined margin-right ng-star-inserted' aaname=' save ' check:innerText='save' /&gt;" Guid="f8ba207d-dce6-43c4-8feb-9c5e7c4c8c27" SearchSteps="FuzzySelector, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NClick.Target>
+              <uix:NClick.VerifyOptions>
+                <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionOptions.Retry>
+                  <uix:VerifyExecutionOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionOptions.Timeout>
+                </uix:VerifyExecutionOptions>
+              </uix:NClick.VerifyOptions>
+            </uix:NClick>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="0, 0, 0, 0" BrowserType="Chrome" IconBase64="iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAALEgAACxIB0t1+/AAAAb9JREFUWEftVMFtwzAM9Ah5trANZISM0BH8KRDKn47QDdoN7A3aDTKCR8izaBwjI2SElidLqkQpToJ+dQABybqjKZJikZGRkSFxKNVmqtTbsaLhWKqTNl5PNXVfD9u1oV3EWG2fwJ116gc2lmrP+49F/X7VrKa67azoorEjcI3M4V96La44ypQgYVOtTr6Te/XISBAEokoQz7PTdsBanLHRYOQF7/v4PNDLMw6i7bQYdYkJ1Ms0jZV6lzzrRPsoydVc6rFO6rlf4tvz3ugijCW9Blw2fMOZDQI/0uQEmC8yRX0xVW1Qu2udzpwo3d+P1OAMWpk5H6f1C3rFlRO9BIfOEZrDcBeRqOv5WuAW8sJBADqiG4CbhDWftbcEIYNHDwSOllKIHxzK541d++mERc9LABrJ58lHn/5Hboyd4Ucwg8al+1hTE2rh1DyvBJINj6cQfNRGOz+duJU/5fx0p54XHPt6c/Od5DnOpWGhyyNKZM0+P4D3qUG0qNdP0CLVVMv2NwUB87zuGMUU9wqcxP2QMi9yAT5PZyKweMoGQF0QSHAjnUbq9ei8grnexIFwWV0JaECv+H2RkZGRMaMofgHAYdWTbEV4qwAAAABJRU5ErkJggg==" InformativeScreenshot="9e128a76c6ab75f179f83d0dfa608f07.jpg" Selector="&lt;html app='chrome.exe' title='Knooly - Login' /&gt;" Title="Knooly - Login" Url="https://knooly-qa.keeggo.com/dashboard" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Chrome: Knooly - Negócios" sap:VirtualizedContainerService.HintSize="450,1254" sap2010:WorkflowViewState.IdRef="NApplicationCard_4" InteractionMode="DebuggerApi" ScopeGuid="013df06f-cd74-4245-8098-7969daaa479c" Version="V2">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Fazer" sap:VirtualizedContainerService.HintSize="416,1005" sap2010:WorkflowViewState.IdRef="Sequence_5">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Pesquisar negócio'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="354,286" sap2010:WorkflowViewState.IdRef="NTypeInto_8" ScopeIdentifier="013df06f-cd74-4245-8098-7969daaa479c" Text="001 - teste giulia" Version="V3">
+              <uix:NTypeInto.Target>
+                <uix:TargetAnchorable BrowserURL="https://knooly-qa.keeggo.com/business" CVScreenId="3fff3a94-5bae-453d-8622-bad2d558324e" CvElementArea="124, 376, 344, 52" CvType="InputBox" DesignTimeRectangle="142, 391, 269, 24" DesignTimeScaleFactor="1" ElementType="InputBox" FullSelectorArgument="&lt;webctrl id='id-business-search-input' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='id-business-search-input' tag='INPUT' type='text' class='mat-mdc-input-element ng-tns-c5-14 ng-untouched ng-pristine mat-mdc-form-field-input-control mdc-text-field__input cdk-text-field-autofill-monitored ng-valid' placeholder='Digite para procurar linha de negócio...' aaname='' /&gt;" Guid="28f45b75-99c8-4deb-b3f6-a5719b96db0b" InformativeScreenshot="12e9b7d996b5fee19c1a03589d9fcb8f.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Knooly - Negócios' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive" />
+              </uix:NTypeInto.Target>
+              <uix:NTypeInto.VerifyOptions>
+                <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionTypeIntoOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionTypeIntoOptions.Retry>
+                  <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                </uix:VerifyExecutionTypeIntoOptions>
+              </uix:NTypeInto.VerifyOptions>
+            </uix:NTypeInto>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Excluir'" sap:VirtualizedContainerService.HintSize="354,225" sap2010:WorkflowViewState.IdRef="NClick_12" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="013df06f-cd74-4245-8098-7969daaa479c" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://knooly-qa.keeggo.com/business" CVScreenId="c1d0417b-c957-44b4-b80b-76bae036a674" CvElementArea="2390, 494, 20, 22" CvType="Icon" DesignTimeRectangle="2389, 493, 24, 24" DesignTimeScaleFactor="1" ElementType="Icon" FullSelectorArgument="&lt;webctrl id='id-delete-business-icon-0' tag='MAT-ICON' /&gt;" FuzzySelectorArgument="&lt;webctrl id='id-delete-business-icon-0' tag='MAT-ICON' type='' class='mat-icon notranslate mat-mdc-tooltip-trigger material-icons-outlined material-icons mat-ligature-font mat-icon-no-color ng-star-inserted' aaname=' delete ' check:innerText='delete' /&gt;" Guid="b3ce9feb-f8e6-4165-ab13-491b1e2df4f9" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAYAAAByDd+UAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAADhSURBVEhLY/j46fN/euJRC6mOB6+FH16//P/mKTp+9/8DFrX4MG4LH177/3T3cSje/P++d9T/OzLoOOP//eUwNUB84Sl2s5AwbgsPz8JiAQHceRq7WUiYSB8SiSnyIRC/Obzu/4MJs4jDC0//f4PFDHSM18JXy2uwBx02nLz5/yssZqBj4ixs2oslhULx1gk0sBBfYoAlrlELoXjUwlELaWRhZBv24gyES4qpZ+HH2zv+37MCGgYyEC+O/39v3X3sZqBh/BaC8Pt32Is0ZPwCiz4cmLCFVMajFlId09nCz/8BqJsrAXEdwlwAAAAASUVORK5CYII=" InformativeScreenshot="10c8c45f1a01d668433b8dbccf1d7fdf.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Knooly - Negócios' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target CVScreenId="c1d0417b-c957-44b4-b80b-76bae036a674" CvElementArea="2427, 493, 70, 24" CvTextArea="2443, 497, 37, 14" CvTextArgument="Ativo" CvType="Button" DesignTimeRectangle="2429, 495, 66, 20" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname=' Ativo ' parentid='mat-expansion-panel-header-0' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname=' Ativo ' parentid='mat-expansion-panel-header-0' tag='DIV' type='' class='isActive active' check:innerText='Ativo' /&gt;" Guid="72ae2afc-b70d-4474-8ae3-d938fb914ebf" SearchSteps="FuzzySelector, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NClick.Target>
+              <uix:NClick.VerifyOptions>
+                <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionOptions.Retry>
+                  <uix:VerifyExecutionOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionOptions.Timeout>
+                </uix:VerifyExecutionOptions>
+              </uix:NClick.VerifyOptions>
+            </uix:NClick>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Excluir linha de negócio'" sap:VirtualizedContainerService.HintSize="354,225" sap2010:WorkflowViewState.IdRef="NClick_13" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="013df06f-cd74-4245-8098-7969daaa479c" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://knooly-qa.keeggo.com/business" CVScreenId="547d7698-5664-49e6-ad57-44680ca22988" CvElementArea="1248, 661, 185, 45" CvTextArea="1266, 675, 150, 17" CvTextArgument="Excluir linha de negocio" CvType="Button" DesignTimeRectangle="1250, 663, 182, 41" DesignTimeScaleFactor="1" ElementType="Button" FullSelectorArgument="&lt;webctrl parentid='id-delete-busiess-item-button-confirm' tag='BUTTON' type='button' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='id-delete-busiess-item-button-confirm' tag='BUTTON' type='button' class='mat-ripple default MEDIUM' aaname=' Excluir linha de negócio ' check:innerText='Excluir linha de negócio' /&gt;" Guid="b532b299-ba9f-48a5-aa74-d0b6b4e46799" InformativeScreenshot="039aa1aa69e4cbef276ad6668b05f05a.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Knooly - Negócios' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target CVScreenId="547d7698-5664-49e6-ad57-44680ca22988" CvElementArea="1248, 661, 185, 45" CvTextArea="1266, 675, 150, 17" CvTextArgument="Excluir linha de negocio" CvType="Button" DesignTimeRectangle="1266, 673, 150, 21" ElementType="Text" FullSelectorArgument="&lt;webctrl parentid='id-delete-busiess-item-button-confirm' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='id-delete-busiess-item-button-confirm' tag='SPAN' type='' class='' aaname=' Excluir linha de negócio ' check:innerText='Excluir linha de negócio' /&gt;" Guid="2ac4c581-7dc5-4b17-987e-ef1b9fa155de" SearchSteps="FuzzySelector, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NClick.Target>
+              <uix:NClick.VerifyOptions>
+                <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionOptions.Retry>
+                  <uix:VerifyExecutionOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionOptions.Timeout>
+                </uix:VerifyExecutionOptions>
+              </uix:NClick.VerifyOptions>
+            </uix:NClick>
+            <uix:NGetText DisplayName="Get Text 'Não existem'" sap:VirtualizedContainerService.HintSize="354,182" sap2010:WorkflowViewState.IdRef="NGetText_2" ScopeIdentifier="013df06f-cd74-4245-8098-7969daaa479c" Version="V3">
+              <uix:NGetText.Target>
+                <uix:TargetAnchorable BrowserURL="https://knooly-qa.keeggo.com/business" CVScreenId="57f90d2a-4153-4d0e-ae64-5a1265df3c47" CvTextArea="1211, 513, 222, 18" CvType="AnyWordGroup" DesignTimeRectangle="126, 481, 2394, 83" DesignTimeScaleFactor="1" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname=' Não existem dados disponíveis. ' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='DIV' type='' class='no-data-message ng-star-inserted' /&gt;" Guid="8e49cad8-f815-47fa-9307-fc3e72f6cc93" InformativeScreenshot="5cd952b63b251018cae81cfbe9c5f23f.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Knooly - Negócios' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive" />
+              </uix:NGetText.Target>
+            </uix:NGetText>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="0, 0, 0, 0" BrowserType="Chrome" IconBase64="iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAALEgAACxIB0t1+/AAAAb9JREFUWEftVMFtwzAM9Ah5trANZISM0BH8KRDKn47QDdoN7A3aDTKCR8izaBwjI2SElidLqkQpToJ+dQABybqjKZJikZGRkSFxKNVmqtTbsaLhWKqTNl5PNXVfD9u1oV3EWG2fwJ116gc2lmrP+49F/X7VrKa67azoorEjcI3M4V96La44ypQgYVOtTr6Te/XISBAEokoQz7PTdsBanLHRYOQF7/v4PNDLMw6i7bQYdYkJ1Ms0jZV6lzzrRPsoydVc6rFO6rlf4tvz3ugijCW9Blw2fMOZDQI/0uQEmC8yRX0xVW1Qu2udzpwo3d+P1OAMWpk5H6f1C3rFlRO9BIfOEZrDcBeRqOv5WuAW8sJBADqiG4CbhDWftbcEIYNHDwSOllKIHxzK541d++mERc9LABrJ58lHn/5Hboyd4Ucwg8al+1hTE2rh1DyvBJINj6cQfNRGOz+duJU/5fx0p54XHPt6c/Od5DnOpWGhyyNKZM0+P4D3qUG0qNdP0CLVVMv2NwUB87zuGMUU9wqcxP2QMi9yAT5PZyKweMoGQF0QSHAjnUbq9ei8grnexIFwWV0JaECv+H2RkZGRMaMofgHAYdWTbEV4qwAAAABJRU5ErkJggg==" InformativeScreenshot="9e128a76c6ab75f179f83d0dfa608f07.jpg" Selector="&lt;html app='chrome.exe' title='Knooly - Login' /&gt;" Title="Knooly - Login" Url="https://knooly-qa.keeggo.com/business" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Chrome: Knooly - Logout" sap:VirtualizedContainerService.HintSize="450,995" sap2010:WorkflowViewState.IdRef="NApplicationCard_5" InteractionMode="DebuggerApi" ScopeGuid="013df06f-cd74-4245-8098-7969daaa479c" Version="V2">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Fazer" sap:VirtualizedContainerService.HintSize="416,755" sap2010:WorkflowViewState.IdRef="Sequence_6">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'expand_more'" sap:VirtualizedContainerService.HintSize="354,225" sap2010:WorkflowViewState.IdRef="NClick_14" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="013df06f-cd74-4245-8098-7969daaa479c" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://knooly-qa.keeggo.com/business" CVScreenId="261360d7-e4fd-41da-8339-1d3fdbe0c3c8" CvElementArea="2451, 172, 22, 22" CvType="ArrowButton" DesignTimeRectangle="2451, 172, 24, 24" DesignTimeScaleFactor="1" ElementType="Icon" FullSelectorArgument="&lt;webctrl parentid='btn-trigger-user-menu' tag='MAT-ICON' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='btn-trigger-user-menu' tag='MAT-ICON' type='' class='mat-icon notranslate material-icons mat-ligature-font mat-icon-no-color' aaname='expand_more' check:innerText='expand_more' /&gt;" Guid="b194db97-5ae7-497c-b5d4-7c799ad2a014" InformativeScreenshot="3e2b7705a165100619923282c7878477.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Knooly - Negócios' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive" />
+              </uix:NClick.Target>
+              <uix:NClick.VerifyOptions>
+                <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionOptions.Retry>
+                  <uix:VerifyExecutionOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionOptions.Timeout>
+                </uix:VerifyExecutionOptions>
+              </uix:NClick.VerifyOptions>
+            </uix:NClick>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Sair'" sap:VirtualizedContainerService.HintSize="354,225" sap2010:WorkflowViewState.IdRef="NClick_15" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="013df06f-cd74-4245-8098-7969daaa479c" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://knooly-qa.keeggo.com/business" CVScreenId="261360d7-e4fd-41da-8339-1d3fdbe0c3c8" CvElementArea="2313, 298, 208, 45" CvType="Button" DesignTimeRectangle="2268, 275, 315, 48" DesignTimeScaleFactor="1" ElementType="Button" FullSelectorArgument="&lt;webctrl id='btn-user-logout' tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl id='btn-user-logout' tag='BUTTON' type='' class='mat-mdc-menu-item mat-mdc-focus-indicator mdc-list-item ng-tns-c120-0' aaname='Sair' check:innerText='Sair' /&gt;" Guid="5ae8c650-7764-49d4-9b3c-78950950ea69" InformativeScreenshot="761910f6dcfb3bbea07bc939df0aa348.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Knooly - Negócios' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target CVScreenId="261360d7-e4fd-41da-8339-1d3fdbe0c3c8" CvElementArea="2313, 298, 208, 45" CvType="Button" DesignTimeRectangle="2413, 287, 25, 24" ElementType="Text" FullSelectorArgument="&lt;webctrl parentid='btn-user-logout' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='btn-user-logout' tag='SPAN' type='' class='mdc-list-item__primary-text' aaname='Sair' check:innerText='Sair' /&gt;" Guid="f9f6063b-323e-45e3-bfd2-5e1faf273b01" SearchSteps="FuzzySelector, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NClick.Target>
+              <uix:NClick.VerifyOptions>
+                <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionOptions.Retry>
+                  <uix:VerifyExecutionOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionOptions.Timeout>
+                </uix:VerifyExecutionOptions>
+              </uix:NClick.VerifyOptions>
+            </uix:NClick>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Entrar Olá,'" sap:VirtualizedContainerService.HintSize="354,218" sap2010:WorkflowViewState.IdRef="NClick_16" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="013df06f-cd74-4245-8098-7969daaa479c" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://knooly-qa.keeggo.com/login" DesignTimeRectangle="8, 147, 2560, 901" DesignTimeScaleFactor="1" FullSelectorArgument="&lt;webctrl id='id-sec-bg' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl id='id-sec-bg' tag='DIV' type='' class='sec-bg sec-bg--color' aaname='' check:innerText='Entrar&amp;#xA;Olá, entre com suas credenciais&amp;#xA;&amp;#xA;&amp;#xA;&amp;#xA;&amp;#xA;E-mail&amp;#xA;Senha&amp;#xA;visibility_off&amp;#xA;Esqueceu sua senha ?&amp;#xA;Fazer' /&gt;" Guid="e16c4621-97d2-4e71-b0ad-5b84b0250d22" InformativeScreenshot="643d46ecd90bfd6985f8e950e9faa43c.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Knooly - Login' /&gt;" SearchSteps="FuzzySelector" Version="V3" Visibility="Interactive" />
+              </uix:NClick.Target>
+              <uix:NClick.VerifyOptions>
+                <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionOptions.Retry>
+                  <uix:VerifyExecutionOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionOptions.Timeout>
+                </uix:VerifyExecutionOptions>
+              </uix:NClick.VerifyOptions>
+            </uix:NClick>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="0, 0, 0, 0" BrowserType="Chrome" IconBase64="iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAALEgAACxIB0t1+/AAAAb9JREFUWEftVMFtwzAM9Ah5trANZISM0BH8KRDKn47QDdoN7A3aDTKCR8izaBwjI2SElidLqkQpToJ+dQABybqjKZJikZGRkSFxKNVmqtTbsaLhWKqTNl5PNXVfD9u1oV3EWG2fwJ116gc2lmrP+49F/X7VrKa67azoorEjcI3M4V96La44ypQgYVOtTr6Te/XISBAEokoQz7PTdsBanLHRYOQF7/v4PNDLMw6i7bQYdYkJ1Ms0jZV6lzzrRPsoydVc6rFO6rlf4tvz3ugijCW9Blw2fMOZDQI/0uQEmC8yRX0xVW1Qu2udzpwo3d+P1OAMWpk5H6f1C3rFlRO9BIfOEZrDcBeRqOv5WuAW8sJBADqiG4CbhDWftbcEIYNHDwSOllKIHxzK541d++mERc9LABrJ58lHn/5Hboyd4Ucwg8al+1hTE2rh1DyvBJINj6cQfNRGOz+duJU/5fx0p54XHPt6c/Od5DnOpWGhyyNKZM0+P4D3qUG0qNdP0CLVVMv2NwUB87zuGMUU9wqcxP2QMi9yAT5PZyKweMoGQF0QSHAjnUbq9ei8grnexIFwWV0JaECv+H2RkZGRMaMofgHAYdWTbEV4qwAAAABJRU5ErkJggg==" InformativeScreenshot="9e128a76c6ab75f179f83d0dfa608f07.jpg" Selector="&lt;html app='chrome.exe' title='Knooly - Login' /&gt;" Title="Knooly - Login" Url="https://knooly-qa.keeggo.com/business" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+  </Sequence>
+</Activity>
